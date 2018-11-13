@@ -1,0 +1,10 @@
+
+source-file "${HOME}/tmux-themepack/powerline/double/cyan.tmuxtheme"
+set -g mouse-resize-pane on
+# Status Bar
+#set-option -g status-position top
+
+bind P paste-buffer
+bind-key -t vi-copy 'v' begin-selection
+bind-key -t vi-copy 'y' copy-selection
+bind-key -t vi-copy 'r' rectangle-toggle
