@@ -24,8 +24,10 @@
         di = "diff --color"
         undo = "reset --soft HEAD^"
         rod = rebase origin/develop
+        rom = rebase origin/master
         cod = checkout develop
-
+        com = checkout master
+        change-commits=!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter "if [[ \"$`echo $VAR`\" = '$OLD' ]]; then export $VAR='$NEW'; fi" $@; }; f
 [pull]
         rebase = true
 [sequence]
