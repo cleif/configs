@@ -1,7 +1,6 @@
 source ~/.bashrc
 source <(npm completion)
-source /local/data/scratch/.shared-tools/common-profile
-source /local/data/scratch/alexeisele/tools/git-completion.bash
+source ~/.git-completion.bash
 source ~/.git-prompt.sh
 export LC_CTYPE="en_US.UTF-8"
 alias ls='ls --color'
