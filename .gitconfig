@@ -8,7 +8,7 @@
 [core]
         symlinks = true
         fscache = true
-        autocrlf = true
+        autocrlf = input
 [credential]
         helper = cache --timeout=86400
 [alias]
